@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Tugas</title>
+        
+        <script>
+            var nilai;
+
+            function lihat(){
+                nilai = document.getElementById("myinput").value;
+                if(0<=nilai && nilai<=20){
+                    document.getElementById("rf").innerHTML = "Nilai Kamu E";
+                }
+                else if(21<=nilai && nilai<=40){
+                    document.getElementById("rf").innerHTML = "Nilai Kamu D";
+                }
+                else if(41<=nilai && nilai<=60){
+                    document.getElementById("rf").innerHTML = "Nilai Kamu C";
+                }
+                else if(61<=nilai && nilai<=80){
+                    document.getElementById("rf").innerHTML = "Nilai Kamu B";
+                }
+                else if(81<=nilai && nilai<=100){
+                    document.getElementById("rf").innerHTML = "Nilai Kamu A";
+                }
+                else { 
+                    document.getElementById("rf").innerHTML = alert("maximum nilai 100");
+                    -->
+                }
+            
+            }
+        </script>
+        
+    </head>
+    <body bgcolor="pink">
+        <center>
+        <form name="tugas">
+            input nilai : <input type="text" id="myinput" size="10" maxlength="3"></br></br>
+            <input type="button" onclick="lihat();" value="hasil">
+        </form>
+        <h3 id="rf"></h3>
+    </center>
+    </body>
+</html>
